@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تسجيل الدخول | دليل طالب هندسة البرمجيات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== القائمة العلوية (مشتركة في الصفحات الست) ===== -->
+    <nav id="rr">
+        <div class="site-title">
+            <img src="images/logo.png" alt="شعار الموقع">
+            <h2 id="y9">دليل طالب هندسة البرمجيات</h2>
+            <img src="images/logo.png" alt="شعار الموقع">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="details.html">تفاصيل المادة</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html" class="active">تسجيل الدخول</a>
+            <a href="dashboard.html">لوحة التحكم</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="page-head">
+            <h1 class="page-title">تسجيل الدخول</h1>
+            <p>سجّل دخولك لتضيف محتوى، أو أنشئ حسابًا جديدًا.</p>
+        </div>
+
+        <div class="account-grid">
+
+            <!-- ===== تسجيل الدخول ===== -->
+            <section class="card">
+                <h2 class="sub-title">لديك حساب؟</h2>
+                <br>
+                <form action="#" method="post">
+                    <div class="field">
+                        <label for="login-user">اسم المستخدم أو البريد</label>
+                        <input type="text" id="login-user" name="user" required>
+                    </div>
+                    <div class="field">
+                        <label for="login-pass">كلمة المرور</label>
+                        <input type="password" id="login-pass" name="password" required>
+                    </div>
+                    <label class="check">
+                        <input type="checkbox" name="remember">
+                        تذكرني
+                    </label>
+                    <br>
+                    <button type="submit" class="btn btn-primary">تسجيل الدخول</button>
+                    <a href="#" class="small-link">نسيت كلمة المرور؟</a>
+                </form>
+            </section>
+
+            <!-- ===== إنشاء حساب ===== -->
+            <section class="card">
+                <h2 class="sub-title">حساب جديد</h2>
+                <br>
+                <form action="#" method="post">
+                    <div class="field">
+                        <label for="name">الاسم الكامل</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="field">
+                        <label for="username">اسم المستخدم</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="field">
+                        <label for="reg-email">البريد الإلكتروني</label>
+                        <input type="email" id="reg-email" name="email" required>
+                    </div>
+                    <div class="field">
+                        <label for="reg-pass">كلمة المرور</label>
+                        <input type="password" id="reg-pass" name="password" minlength="8" required>
+                        <span class="hint">8 أحرف على الأقل</span>
+                    </div>
+                    <div class="field">
+                        <label for="reg-pass2">تأكيد كلمة المرور</label>
+                        <input type="password" id="reg-pass2" name="password_confirm" minlength="8" required>
+                    </div>
+                    <div class="field">
+                        <label for="year-study">السنة الدراسية</label>
+                        <select id="year-study" name="year_study">
+                            <option>الثالثة</option>
+                            <option>الرابعة</option>
+                            <option>الخامسة</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">إنشاء الحساب</button>
+                </form>
+            </section>
+
+        </div>
+
+    </main>
+
+    <!-- ===== التذييل (مشترك في الصفحات الست) ===== -->
+    <footer class="site-footer">
+        <p class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+        </p>
+        <p>دليل طالب هندسة البرمجيات - منصة تعاونية لطلاب القسم</p>
+        <p class="footer-small">مشروع برمجة الإنترنت المتقدمة</p>
+    </footer>
+
+</body>
+</html>

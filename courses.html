@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المواد الدراسية | دليل طالب هندسة البرمجيات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== القائمة العلوية (مشتركة في الصفحات الست) ===== -->
+    <nav id="rr">
+        <div class="site-title">
+            <img src="images/logo.png" alt="شعار الموقع">
+            <h2 id="y9">دليل طالب هندسة البرمجيات</h2>
+            <img src="images/logo.png" alt="شعار الموقع">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html" class="active">المواد الدراسية</a>
+            <a href="details.html">تفاصيل المادة</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+            <a href="dashboard.html">لوحة التحكم</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="page-head">
+            <h1 class="page-title">المواد الدراسية</h1>
+            <p>13 مادة أساسية. اختر المادة لترى شيتاتها ومحاضراتها وامتحاناتها السابقة.</p>
+        </div>
+
+        <!-- صندوق البحث: الشكل جاهز، والبحث الفعلي يُضاف لاحقًا -->
+        <form class="search-box" action="courses.html" method="get">
+            <input type="search" name="q" placeholder="ابحث باسم المادة أو رمزها، مثل ITSE321">
+            <button type="submit" class="btn btn-primary">بحث</button>
+        </form>
+
+        <div class="listing">
+
+            <!-- التصنيفات: روابط داخل الصفحة تعمل بدون جافا سكربت -->
+            <aside class="card categories">
+                <h3>المستويات</h3>
+                <ul>
+                    <li><a href="#level-300">مستوى 300 <span>4</span></a></li>
+                    <li><a href="#level-400">مستوى 400 <span>8</span></a></li>
+                    <li><a href="#level-500">مشروع التخرج <span>1</span></a></li>
+                </ul>
+            </aside>
+
+            <div class="subjects">
+
+                <!-- ===== مستوى 300 ===== -->
+                <section class="level-group" id="level-300">
+                    <h2 class="section-title">مستوى 300 <span class="counts">(4)</span></h2>
+                    <div class="cards-grid">
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE311</div>
+                            <div class="course-body">
+                                <h4>تحليل متطلبات البرمجيات</h4>
+                                <span class="tag">مستوى 300</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE312</div>
+                            <div class="course-body">
+                                <h4>قواعد البيانات المتقدمة</h4>
+                                <span class="tag">مستوى 300</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE321</div>
+                            <div class="course-body">
+                                <h4>بناء البرمجيات</h4>
+                                <span class="tag">مستوى 300</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE322</div>
+                            <div class="course-body">
+                                <h4>جافا متقدمة</h4>
+                                <span class="tag">مستوى 300</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ===== مستوى 400 ===== -->
+                <section class="level-group" id="level-400">
+                    <h2 class="section-title">مستوى 400 <span class="counts">(8)</span></h2>
+                    <div class="cards-grid">
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE411</div>
+                            <div class="course-body">
+                                <h4>تصميم وهيكلة البرمجيات</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE412</div>
+                            <div class="course-body">
+                                <h4>برمجة الإنترنت المتقدمة</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE413</div>
+                            <div class="course-body">
+                                <h4>التفاعل بين الإنسان والحاسوب</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE414</div>
+                            <div class="course-body">
+                                <h4>أخلاقيات هندسة البرمجيات</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE421</div>
+                            <div class="course-body">
+                                <h4>جودة واختبار البرمجيات</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE422</div>
+                            <div class="course-body">
+                                <h4>إعادة استخدام البرمجيات</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE423</div>
+                            <div class="course-body">
+                                <h4>البرمجة المرئية</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE424</div>
+                            <div class="course-body">
+                                <h4>أنماط تصميم البرمجيات</h4>
+                                <span class="tag">مستوى 400</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- ===== مشروع التخرج ===== -->
+                <section class="level-group" id="level-500">
+                    <h2 class="section-title">مشروع التخرج <span class="counts">(1)</span></h2>
+                    <div class="cards-grid">
+
+                        <article class="card course-card">
+                            <div class="course-cover en">ITSE500</div>
+                            <div class="course-body">
+                                <h4>مشروع التخرج</h4>
+                                <span class="tag">مشروع التخرج</span>
+                                <p class="counts">لا يوجد محتوى بعد</p>
+                                <a href="details.html" class="btn btn-primary btn-sm">عرض المادة</a>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ===== التذييل (مشترك في الصفحات الست) ===== -->
+    <footer class="site-footer">
+        <p class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+        </p>
+        <p>دليل طالب هندسة البرمجيات - منصة تعاونية لطلاب القسم</p>
+        <p class="footer-small">مشروع برمجة الإنترنت المتقدمة</p>
+    </footer>
+
+</body>
+</html>

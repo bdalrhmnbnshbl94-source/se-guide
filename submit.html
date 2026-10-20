@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة محتوى | دليل طالب هندسة البرمجيات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== القائمة العلوية (مشتركة في الصفحات الست) ===== -->
+    <nav id="rr">
+        <div class="site-title">
+            <img src="images/logo.png" alt="شعار الموقع">
+            <h2 id="y9">دليل طالب هندسة البرمجيات</h2>
+            <img src="images/logo.png" alt="شعار الموقع">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="details.html">تفاصيل المادة</a>
+            <a href="submit.html" class="active">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+            <a href="dashboard.html">لوحة التحكم</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="page-head">
+            <h1 class="page-title">إضافة محتوى</h1>
+            <p>أضف شيتًا أو محاضرة أو امتحانًا سابقًا لإحدى المواد.</p>
+        </div>
+
+        <section class="card form-card">
+
+            <p class="notice">لن يُنشر الملف مباشرة. سيظهر للأدمن في لوحة التحكم، ويُنشر بعد موافقته.</p>
+
+            <form action="#" method="post" enctype="multipart/form-data">
+                <div class="form-grid">
+
+                    <!-- select: قائمة منسدلة -->
+                    <div class="field full">
+                        <label for="course">المادة</label>
+                        <select id="course" name="course" required>
+                            <option value="">اختر المادة</option>
+                            <option value="ITSE311">ITSE311 - تحليل متطلبات البرمجيات</option>
+                            <option value="ITSE312">ITSE312 - قواعد البيانات المتقدمة</option>
+                            <option value="ITSE321">ITSE321 - بناء البرمجيات</option>
+                            <option value="ITSE322">ITSE322 - جافا متقدمة</option>
+                            <option value="ITSE411">ITSE411 - تصميم وهيكلة البرمجيات</option>
+                            <option value="ITSE412">ITSE412 - برمجة الإنترنت المتقدمة</option>
+                            <option value="ITSE413">ITSE413 - التفاعل بين الإنسان والحاسوب</option>
+                            <option value="ITSE414">ITSE414 - أخلاقيات هندسة البرمجيات</option>
+                            <option value="ITSE421">ITSE421 - جودة واختبار البرمجيات</option>
+                            <option value="ITSE422">ITSE422 - إعادة استخدام البرمجيات</option>
+                            <option value="ITSE423">ITSE423 - البرمجة المرئية</option>
+                            <option value="ITSE424">ITSE424 - أنماط تصميم البرمجيات</option>
+                            <option value="ITSE500">ITSE500 - مشروع التخرج</option>
+                        </select>
+                    </div>
+
+                    <!-- radio: اختيار واحد فقط -->
+                    <fieldset class="field full">
+                        <legend>نوع المحتوى</legend>
+                        <div class="options">
+                            <label><input type="radio" name="type" value="sheet" checked> شيت</label>
+                            <label><input type="radio" name="type" value="lecture"> محاضرة</label>
+                            <label><input type="radio" name="type" value="exam"> امتحان سابق</label>
+                        </div>
+                    </fieldset>
+
+                    <!-- text: نص -->
+                    <div class="field full">
+                        <label for="title">عنوان الملف</label>
+                        <input type="text" id="title" name="title" placeholder="مثال: ملخص الفصل الثالث" required>
+                    </div>
+
+                    <!-- number: رقم -->
+                    <div class="field">
+                        <label for="year">سنة الامتحان</label>
+                        <input type="number" id="year" name="year" min="2000" max="2030" placeholder="2025">
+                        <span class="hint">للامتحانات السابقة فقط</span>
+                    </div>
+
+                    <!-- select: قائمة منسدلة -->
+                    <div class="field">
+                        <label for="semester">الفصل</label>
+                        <select id="semester" name="semester">
+                            <option value="">اختر الفصل</option>
+                            <option>خريف</option>
+                            <option>ربيع</option>
+                            <option>صيفي</option>
+                        </select>
+                    </div>
+
+                    <!-- date: تاريخ -->
+                    <div class="field">
+                        <label for="exam-date">تاريخ الامتحان</label>
+                        <input type="date" id="exam-date" name="exam_date">
+                    </div>
+
+                    <!-- email: بريد إلكتروني -->
+                    <div class="field">
+                        <label for="email">بريدك الإلكتروني</label>
+                        <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                    </div>
+
+                    <!-- file: رفع ملف -->
+                    <div class="field full">
+                        <label for="file">الملف</label>
+                        <input type="file" id="file" name="file" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.png" required>
+                        <span class="hint">PDF أو Word أو PowerPoint أو صورة</span>
+                    </div>
+
+                    <!-- textarea: نص طويل -->
+                    <div class="field full">
+                        <label for="notes">ملاحظات للأدمن</label>
+                        <textarea id="notes" name="notes" placeholder="أي معلومة تساعد في مراجعة الملف"></textarea>
+                    </div>
+
+                    <!-- checkbox: مربع اختيار -->
+                    <label class="check field full">
+                        <input type="checkbox" name="agree" required>
+                        أؤكد أن الملف مفيد للطلاب ولا يحتوي على شيء مخالف
+                    </label>
+
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">إرسال للمراجعة</button>
+                    <a href="courses.html" class="btn btn-secondary">إلغاء</a>
+                </div>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- ===== التذييل (مشترك في الصفحات الست) ===== -->
+    <footer class="site-footer">
+        <p class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+        </p>
+        <p>دليل طالب هندسة البرمجيات - منصة تعاونية لطلاب القسم</p>
+        <p class="footer-small">مشروع برمجة الإنترنت المتقدمة</p>
+    </footer>
+
+</body>
+</html>

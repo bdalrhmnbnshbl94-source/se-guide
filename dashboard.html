@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوحة التحكم | دليل طالب هندسة البرمجيات</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ===== القائمة العلوية (مشتركة في الصفحات الست) ===== -->
+    <nav id="rr">
+        <div class="site-title">
+            <img src="images/logo.png" alt="شعار الموقع">
+            <h2 id="y9">دليل طالب هندسة البرمجيات</h2>
+            <img src="images/logo.png" alt="شعار الموقع">
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="details.html">تفاصيل المادة</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+            <a href="dashboard.html" class="active">لوحة التحكم</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <div class="page-head">
+            <h1 class="page-title">لوحة التحكم</h1>
+            <p>مراجعة المحتوى الذي يرسله الطلاب، والموافقة عليه أو رفضه، وإدارة المواد.</p>
+        </div>
+
+        <!-- ===== الإحصائيات ===== -->
+        <section class="stats">
+            <div class="card stat"><strong>13</strong><span>مادة</span></div>
+            <div class="card stat pending"><strong>0</strong><span>بانتظار المراجعة</span></div>
+            <div class="card stat"><strong>0</strong><span>ملف منشور</span></div>
+            <div class="card stat"><strong>0</strong><span>طالب مسجل</span></div>
+        </section>
+
+        <!-- ===== المحتوى بانتظار المراجعة ===== -->
+        <section class="dash-section">
+            <div class="dash-head">
+                <h2 class="section-title">بانتظار المراجعة</h2>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>العنوان</th>
+                            <th>المادة</th>
+                            <th>النوع</th>
+                            <th>أرسله</th>
+                            <th>التاريخ</th>
+                            <th>الإجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- كل ملف يرسله طالب يظهر هنا، ومعه زرا "موافقة" و"رفض" -->
+                        <tr>
+                            <td colspan="6" class="empty-row">لا يوجد محتوى بانتظار المراجعة.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== إدارة المواد ===== -->
+        <section class="dash-section">
+            <div class="dash-head">
+                <h2 class="section-title">المواد</h2>
+                <a href="#" class="btn btn-primary btn-sm">+ إضافة مادة</a>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>الرمز</th>
+                            <th>اسم المادة</th>
+                            <th>المستوى</th>
+                            <th>عدد الملفات</th>
+                            <th>الإجراء</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="en">ITSE311</td>
+                            <td>تحليل متطلبات البرمجيات</td>
+                            <td>مستوى 300</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE312</td>
+                            <td>قواعد البيانات المتقدمة</td>
+                            <td>مستوى 300</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE321</td>
+                            <td>بناء البرمجيات</td>
+                            <td>مستوى 300</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE322</td>
+                            <td>جافا متقدمة</td>
+                            <td>مستوى 300</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE411</td>
+                            <td>تصميم وهيكلة البرمجيات</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE412</td>
+                            <td>برمجة الإنترنت المتقدمة</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE413</td>
+                            <td>التفاعل بين الإنسان والحاسوب</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE414</td>
+                            <td>أخلاقيات هندسة البرمجيات</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE421</td>
+                            <td>جودة واختبار البرمجيات</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE422</td>
+                            <td>إعادة استخدام البرمجيات</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE423</td>
+                            <td>البرمجة المرئية</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE424</td>
+                            <td>أنماط تصميم البرمجيات</td>
+                            <td>مستوى 400</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="en">ITSE500</td>
+                            <td>مشروع التخرج</td>
+                            <td>مشروع التخرج</td>
+                            <td>0</td>
+                            <td class="row-actions">
+                                <a href="#" class="btn btn-secondary btn-sm">تعديل</a>
+                                <a href="#" class="btn btn-danger btn-sm">حذف</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ===== سجل النشاط ===== -->
+        <section class="dash-section">
+            <div class="dash-head">
+                <h2 class="section-title">سجل النشاط</h2>
+            </div>
+            <div class="empty">
+                <strong>لا يوجد نشاط بعد</strong>
+                ستظهر هنا عمليات الموافقة والرفض والتعديل.
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===== التذييل (مشترك في الصفحات الست) ===== -->
+    <footer class="site-footer">
+        <p class="footer-links">
+            <a href="index.html">الرئيسية</a>
+            <a href="courses.html">المواد الدراسية</a>
+            <a href="submit.html">إضافة محتوى</a>
+            <a href="account.html">تسجيل الدخول</a>
+        </p>
+        <p>دليل طالب هندسة البرمجيات - منصة تعاونية لطلاب القسم</p>
+        <p class="footer-small">مشروع برمجة الإنترنت المتقدمة</p>
+    </footer>
+
+</body>
+</html>
